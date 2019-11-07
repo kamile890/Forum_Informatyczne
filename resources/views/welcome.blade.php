@@ -1,116 +1,54 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        {{-- Vue.js --}}
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+@section('content')
 
 
+    @if(Auth::check() && Auth::user()->banned)
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-{{--test--}}
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+        {{--content jeśli user jest zbanowany--}}
+        <div class="row justify-content-center" >
+            <div class = "col-6 " style="text-align: center">
+                <img class="img-fluid" src="images\stop.png" height="30%" width="30%">
+                <div class="alert alert-danger" role="alert" style="margin-top: 20px">
+                    <h1>Twoje konto zostało zablokowane.</h1> W celu odblokowania konta skontaktuj się z supportem napisz pod supportforum@forumkomputerowe.pl
                 </div>
             </div>
         </div>
-    </body>
 
-<script>
-    new Vue({
-        data() {
-            return {
-                appTitle: "Pierwsza aplikacja Vue!"
-            };
-        }
-    }).$mount("#app");
-</script>
+    @else
+        @foreach($sections as $section)
 
-</html>
+            <div id="Temat" class="panel panel-default row justify-content-center col-6 mx-auto">
+                <div class="panel-body">{{$section->name}}</div>
+            </div>
+
+            @foreach($topics as $topic)
+                @if($topic->section_id == $section->id)
+
+                    <a id="linki" href="{{$topic->id}}">
+                        <div id="Post" class="col-lg-10 col-sm-12 row justify-content-center">
+                            <div id="Icona" class="col-2">
+                                <p><img  src="{{asset("images/arrowRight.png")}}" height="70%" width="70%"></p>
+                            </div>
+
+                            <div id="zawartosc-postu" class="col-lg-7 col-sm-12 panel panel-body">
+                                <h1 id="first-line">{{$topic->name}}</h1>
+                                <h2 id="Second-line">{{$topic->description}}</h2>
+                            </div>
+
+                            <div id="Ilosc_tematow-post" class="col-3">
+                                <p style="margin-bottom: 5px;">Tematów:</p>
+                                <p class="liczba-tematow">{{\App\Http\Controllers\welcome_Controller::count_number_of_posts($topic->id)}}</p>
+                            </div>
+                        </div>
+                    </a>
+                    </form>
+                    @endif
+                    @endforeach
+                    @endforeach
+
+                    </div>
+                @endif
+@endsection
+
+
