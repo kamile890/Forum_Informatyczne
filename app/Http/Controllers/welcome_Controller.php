@@ -13,7 +13,7 @@ class welcome_Controller extends Controller
 
     public function __construct()
     {
-        $this->middleware('rank');
+       // $this->middleware('rank');
     }
 
     public function welcome(){
