@@ -30,10 +30,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img style="width: 300px; height: auto " src="{{asset("images/logo.png")}}"
-                         alt="Responsive image">
-                </a>
+  
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -96,12 +93,6 @@
             </div>
         </nav>
 
-        <main  style="background-color: #5a6268;">
-            <div class = "container" style="background-color: #4e555b; padding: 25px ">
-                @yield('content')
-            </div>
-
-        </main>
     </div>
     </body>
 
