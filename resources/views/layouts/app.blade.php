@@ -27,73 +27,82 @@
 
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
-            <div class="container">
-  
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div id="app">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img style="width: 300px; height: auto " src="{{asset("images/logo.png")}}"
+                     alt="Responsive image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
 
-                    </ul>
+                </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Logowanie') }}</a>
+                        </li>
+                        @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Logowanie') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
-                                </li>
-                            @endif
+                        @endif
 
-                        @else
-                            <li class="nav-item dropdown">
+                    @else
+                        <li class="nav-item dropdown">
 
 
-                                <a style="font-size: 20px" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                            <a style="font-size: 20px" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                            {{--przejście do profilu--}}
+                            <div id="navbarDropdown" class="dropdown-menu dropdown-menu-right"  >
+                                <a class="dropdown-item a1" href="{{ url('/profile') }}">
+                                    Profil
                                 </a>
-                                    {{--przejście do profilu--}}
-                                <div id="navbarDropdown" class="dropdown-menu dropdown-menu-right"  >
-                                    <a class="dropdown-item a1" href="{{ url('/profile') }}">
-                                        Profil
+                                {{--przejście do panelu zarządzania--}}
+                                @if(Auth::user()->role_name == "Admin")
+                                    <a class="dropdown-item a1" href="{{ url('/zarzadzanie') }}">
+                                        Zarządzaj
                                     </a>
-                                    {{--przejście do panelu zarządzania--}}
-                                    @if(Auth::user()->role_name == "Admin")
-                                        <a class="dropdown-item a1" href="{{ url('/zarzadzanie') }}">
-                                            Zarządzaj
-                                        </a>
 
-                                    @endif
-                                    <a class="dropdown-item a1" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                                @endif
+                                <a class="dropdown-item a1" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        Wyloguj
-                                    </a>
+                                    Wyloguj
+                                </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
-                                        @csrf
-                                    </form>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
+                                    @csrf
+                                </form>
 
-                                </div>
+                            </div>
 
-                            </li>
+                        </li>
 
-                        @endguest
-                    </ul>
-                </div>
+                    @endguest
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-    </div>
-    </body>
+    <main  style="background-color: #5a6268;">
+        <div class = "container" style="background-color: #4e555b; padding: 25px ">
+            @yield('content')
+        </div>
+
+    </main>
+</div>
+</body>
 
 </html>
