@@ -11,7 +11,7 @@ class Kernel extends HttpKernel
      *
      * These middleware are run during every request to your application.
      *
-     * @var array ssdasd5234523
+     * @var array ssdasd52345232`312424
      */
     protected $middleware = [
         \App\Http\Middleware\CheckForMaintenanceMode::class,
