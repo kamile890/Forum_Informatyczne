@@ -56,7 +56,7 @@
         $(document).ready(function(){
             Fingerprint2.get(function (components){
                 var murmur = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
-                $("#fingerprint").text("asd");
+                $("#fingerprint").text(murmur);
             })
         });
 

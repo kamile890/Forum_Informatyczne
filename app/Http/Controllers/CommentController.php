@@ -22,7 +22,7 @@ class CommentController extends Controller
 
     public function tworzenie_komentarza(Request $request){
 
-
+    
         $opis = $request->validate(['opis'=> 'required']);
         $postID = $request->input('postID');
         Comment::create([
@@ -30,6 +30,7 @@ class CommentController extends Controller
             'post_id' => $postID,
             'user_id' => Auth::user()->id,
             'rating' => 0,
+
         ]);
         $komunikat = "Komentarz został dodany pomyślnie.";
 
@@ -69,9 +70,11 @@ class CommentController extends Controller
     public static function hand_up(Request $request){
         $id = $request->input('id');
 
+
         $comment = Comment::where('id', $id)->first();
 
         $user_id = Auth::user()->id;
+
 
         Like::create([
             'user_id' => $user_id,

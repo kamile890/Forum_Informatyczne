@@ -108,6 +108,7 @@
                 <div class="row">
                 @if(Auth::check())
                     @foreach($likes as $like)
+                        <input type="hidden" id="fingerprint" value="{{$comment['fingerprint']}}">
                             @if($like['user_id'] == Auth::user()->id && $like['comment_id'] == $comment->id)
                                     <?php
                                     $liked = true;
@@ -307,26 +308,41 @@
     </div>
 
     <script>
+
+
         $(document).ready(function() {
+            var fingerprint;
+            Fingerprint2.get(function (components){
+                fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
+            })
+
+            var finger = $('input#fingerprint').val();
+
+
+
             $('button.up').click(function () {
                 var thit = $(this);
                 var id = thit.attr('about');
-                $.get('{{url('/hand_up')}}',{id: id}, function(data){
+                if(fingerprint === finger){
+                    //coś tam zrób
+                } else {
+                $.get('{{url('/hand_up')}}',{id: id}, {fingerprint: fingerprint}, function(data){
                 thit.parent('div').children('div').html(data);
                 });
 
                 $(this).attr('disabled','true')
                 $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
-
+}
 
             })
         })
 
         $(document).ready(function() {
+
             $('button.down').click(function () {
                 var thit = $(this);
                 var id = thit.attr('about');
-                $.get('{{url('/hand_down')}}',{id: id}, function(data){
+                $.get('{{url('/hand_down')}}',{fingerprint: fingerprint}, function(data){
                     thit.parent('div').children('div').html(data);
                 });
 
@@ -338,5 +354,5 @@
             })
         })
     </script>
-
+    <div id="fingerprint"></div>
 @endsection
