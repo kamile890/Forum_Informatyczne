@@ -6,7 +6,7 @@ use App\Topic;
 use Closure;
 use phpDocumentor\Reflection\Types\Integer;
 
-class CheckPostId
+class CheckTopicId
 {
     /**
      * Handle an incoming request.
