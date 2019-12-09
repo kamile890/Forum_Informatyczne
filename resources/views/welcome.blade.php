@@ -49,7 +49,7 @@
 
                     </div>
                 @endif
-<div id="fingerprint"></div>
+
     <script>
 
 

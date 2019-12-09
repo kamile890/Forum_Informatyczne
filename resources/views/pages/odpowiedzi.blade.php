@@ -65,6 +65,7 @@
             </div>
         @else
         @foreach($comments as $comment)
+            <input type="hidden" class="finger" value="{{$comment->fingerprint}}">
         <div class="row">
             @foreach($users as $user)
                 @if($user->id == $comment->user_id)
@@ -108,7 +109,6 @@
                 <div class="row">
                 @if(Auth::check())
                     @foreach($likes as $like)
-                        <input type="hidden" id="fingerprint" value="{{$comment['fingerprint']}}">
                             @if($like['user_id'] == Auth::user()->id && $like['comment_id'] == $comment->id)
                                     <?php
                                     $liked = true;
@@ -294,6 +294,7 @@
                             <textarea name="opis" class="form-control" style="width: 450px; height: 200px;" required></textarea>
                         </div>
                         <input type="hidden" name="postID" value="{{$id}}">
+                        <input class="fingerprint" type="hidden" name="fingerprint">
                         <div class="row justify-content-center"><button type="submit" class="btn btn-success " >Dodaj</button></div>
                     </form>
                 </div>
@@ -314,45 +315,60 @@
             var fingerprint;
             Fingerprint2.get(function (components){
                 fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
+                $('input.fingerprint').val(fingerprint)
             })
 
-            var finger = $('input#fingerprint').val();
-
+            var finger = $('input.finger').val()
 
 
             $('button.up').click(function () {
                 var thit = $(this);
                 var id = thit.attr('about');
-                if(fingerprint === finger){
-                    //coś tam zrób
-                } else {
-                $.get('{{url('/hand_up')}}',{id: id}, {fingerprint: fingerprint}, function(data){
-                thit.parent('div').children('div').html(data);
-                });
+                if(finger === fingerprint){
+                    $(this).attr('title', 'Z tego komputera dodano już ocenę.')
+                    $(this).parent('div.parent').children('button.down').attr('title', 'Z tego komputera dodano już ocenę.')
+                    $(this).attr('disabled', 'true')
+                    $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
+                }else {
+                    $.get('{{url('/hand_up')}}', {id: id}, function (data) {
+                        thit.parent('div').children('div').html(data);
+                    });
 
-                $(this).attr('disabled','true')
-                $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
-}
+                    $(this).attr('disabled', 'true')
+                    $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
+                }
 
             })
-        })
 
-        $(document).ready(function() {
 
             $('button.down').click(function () {
                 var thit = $(this);
                 var id = thit.attr('about');
-                $.get('{{url('/hand_down')}}',{fingerprint: fingerprint}, function(data){
-                    thit.parent('div').children('div').html(data);
-                });
 
-                $(this).attr('disabled','true')
-                $(this).parent('div.parent').children('button.up').attr('disabled', 'true');
 
+                if(finger === fingerprint){
+                    $(this).attr('title', 'Z tego komputera dodano już ocenę.')
+                    $(this).parent('div.parent').children('button.down').attr('title', 'Z tego komuptera dodano już ocenę.')
+                    $(this).attr('disabled', 'true')
+                    $(this).parent('div.parent').children('button.up').attr('disabled', 'true');
+                }else {
+                    $.get('{{url('/hand_down')}}', {id: id}, function (data) {
+                        thit.parent('div').children('div').html(data);
+                    });
+
+                    $(this).attr('disabled', 'true')
+                    $(this).parent('div.parent').children('button.up').attr('disabled', 'true');
+                }
 
 
             })
+
+
+
+
         })
+
+
     </script>
-    <div id="fingerprint"></div>
+
 @endsection

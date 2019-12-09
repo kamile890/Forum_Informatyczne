@@ -25,11 +25,14 @@ class CommentController extends Controller
     
         $opis = $request->validate(['opis'=> 'required']);
         $postID = $request->input('postID');
+        $fingerprint = $request->input('fingerprint');
+
         Comment::create([
             'content' => $opis['opis'],
             'post_id' => $postID,
             'user_id' => Auth::user()->id,
             'rating' => 0,
+            'fingerprint' => $fingerprint,
 
         ]);
         $komunikat = "Komentarz został dodany pomyślnie.";

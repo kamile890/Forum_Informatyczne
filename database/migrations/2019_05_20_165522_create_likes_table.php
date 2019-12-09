@@ -19,7 +19,6 @@ class CreateLikesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('comment_id');
             $table->foreign('comment_id')->references('id')->on('comments');
-            $table->string('fingerprint');
             $table->timestamps();
         });
     }
