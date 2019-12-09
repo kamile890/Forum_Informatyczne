@@ -17,6 +17,7 @@ class postsController extends Controller
 
         $this->middleware('banned');
         $this->middleware('rank');
+        $this->middleware('checkPostId');
     }
 
     public function go_to_posts(Request $request, $id){

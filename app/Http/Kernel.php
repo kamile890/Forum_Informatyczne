@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'notLoggedIn' => \App\Http\Middleware\RedirectIfNotAuthenticated::class,
         'banned' => \App\Http\Middleware\RedirectIfBanned::class,
         'rank' =>  \App\Http\Middleware\check_rank::class,
+        'checkPostId' => \App\Http\Middleware\CheckPostId::class,
     ];
 
     /**
