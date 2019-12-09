@@ -49,6 +49,6 @@ Route::get('/hand_up', 'CommentController@hand_up');
 
 Route::get('/hand_down', 'CommentController@hand_down');
 
-Route::get('/{id}', 'postsController@go_to_posts');
+Route::get('/{id}', 'postsController@go_to_posts')->middleware('checkTopicId');
 
-Route::get('/post/{id}', 'CommentController@go_to_comments');
+Route::get('/post/{id}', 'CommentController@go_to_comments')->middleware('checkPostId');

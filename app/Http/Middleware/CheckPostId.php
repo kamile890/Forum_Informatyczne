@@ -22,7 +22,7 @@ class CheckPostId
         $id = $request->route('id');
 
 
-        if(filter_var($id, FILTER_VALIDATE_INT) === false || $post->id < $id){
+        if(filter_var($id, FILTER_VALIDATE_INT) === false || $id > $post->id){
             return redirect('/');
         }
 
