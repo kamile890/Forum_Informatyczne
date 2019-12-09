@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
@@ -35,7 +36,7 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img style="width: 300px; height: auto " src="{{asset("images/logo.png")}}"
+                <img style="width: 300px; height: auto " src="{{asset("images/logo2.png")}}"
                      alt="Responsive image">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -53,11 +54,11 @@
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Logowanie') }}</a>
+                            <a class="nav-link" style="font-size: 20px" href="{{ route('login') }}">{{ __('Logowanie') }}</a>
                         </li>
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
+                                <a class="nav-link" style="font-size: 20px" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
                             </li>
                         @endif
 

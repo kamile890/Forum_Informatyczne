@@ -24,7 +24,7 @@ class CheckTopicId
 
 
         if(filter_var($id, FILTER_VALIDATE_INT) === false || $topic->id < $id){
-            return redirect('/');
+            return redirect('/ups');
         }
 
 

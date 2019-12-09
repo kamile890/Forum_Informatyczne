@@ -28,4 +28,6 @@ class welcome_Controller extends Controller
         $number = DB::table('posts')->where('topic_id', $topic_id)->count();
         return $number;
     }
+
+
 }

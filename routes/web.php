@@ -14,6 +14,7 @@
 Route::get('/', 'welcome_Controller@welcome');
 
 Auth::routes();
+Route::get('/ups', 'UpsController@index');
 
 Route::get('/profile', 'profile_Controller@go_to_profile');
 
@@ -52,3 +53,5 @@ Route::get('/hand_down', 'CommentController@hand_down');
 Route::get('/{id}', 'postsController@go_to_posts')->middleware('checkTopicId');
 
 Route::get('/post/{id}', 'CommentController@go_to_comments')->middleware('checkPostId');
+
+

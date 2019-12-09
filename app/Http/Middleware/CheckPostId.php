@@ -23,7 +23,7 @@ class CheckPostId
 
 
         if(filter_var($id, FILTER_VALIDATE_INT) === false || $id > $post->id){
-            return redirect('/');
+            return redirect('/ups');
         }
 
 
