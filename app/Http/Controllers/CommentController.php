@@ -18,6 +18,7 @@ class CommentController extends Controller
 
         $this->middleware('banned');
         $this->middleware('rank');
+        $this->middleware('checkPostId');
     }
 
     public function tworzenie_komentarza(Request $request){
