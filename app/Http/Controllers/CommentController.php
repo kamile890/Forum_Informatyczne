@@ -18,7 +18,7 @@ class CommentController extends Controller
 
         $this->middleware('banned');
         $this->middleware('rank');
-        $this->middleware('checkPostId');
+
     }
 
     public function tworzenie_komentarza(Request $request){
@@ -26,14 +26,13 @@ class CommentController extends Controller
     
         $opis = $request->validate(['opis'=> 'required']);
         $postID = $request->input('postID');
-        $fingerprint = $request->input('fingerprint');
+
 
         Comment::create([
             'content' => $opis['opis'],
             'post_id' => $postID,
             'user_id' => Auth::user()->id,
             'rating' => 0,
-            'fingerprint' => $fingerprint,
 
         ]);
         $komunikat = "Komentarz został dodany pomyślnie.";
@@ -74,48 +73,64 @@ class CommentController extends Controller
     public static function hand_up(Request $request){
         $id = $request->input('id');
 
+        $fingerprint = $request->input('fingerprint');
 
-        $comment = Comment::where('id', $id)->first();
+        $fingerprintExists = false;
 
-        $user_id = Auth::user()->id;
-
-
-        Like::create([
-            'user_id' => $user_id,
-            'comment_id' => $id,
-        ]);
-
-        $rating = $comment->rating;
-
-        $return = $rating +1;
-        Comment::where('id', $id)->update(['rating' => $return]);
-
-
-//        updateowanie rangi
-        $id = $comment->user_id;
-
-        $rating = Comment::where('user_id', $id)->sum('rating');
-
-        if($rating <= 2){
-            User::where('id', $id)->update(['rank_name' => 'Nowicjusz']);
-        }else if($rating > 2 && $rating <= 10){
-            User::where('id', $id)->update(['rank_name' => 'Zadziorny żółtodziób']);
-        }else if($rating > 10 && $rating <= 15){
-            User::where('id', $id)->update(['rank_name' => 'Znawca komputerów']);
-        }else if($rating > 15 && $rating <= 20){
-            User::where('id', $id)->update(['rank_name' => 'Weteran']);
-        }else if($rating > 20 && $rating <= 25){
-            User::where('id', $id)->update(['rank_name' => 'Nerd']);
-        }else if($rating > 25 && $rating <= 30){
-            User::where('id', $id)->update(['rank_name' => 'Władca bajtów']);
-        }else if($rating > 30){
-            User::where('id', $id)->update(['rank_name' => 'Piwniczak']);
+        $likes = Like::all();
+        foreach($likes as $like){
+            if($like['comment_id'] == $id && $like['fingerprint'] == $fingerprint){
+                $fingerprintExists = true;
+            }
         }
 
 
 
-        return $return;
+        if($fingerprintExists){
+            return "Już oceniano";
+        }else {
 
+            $comment = Comment::where('id', $id)->first();
+
+            $user_id = Auth::user()->id;
+
+            Like::create([
+                'user_id' => $user_id,
+                'comment_id' => $id,
+                'fingerprint' => $fingerprint,
+
+            ]);
+
+            $rating = $comment->rating;
+
+            $return = $rating + 1;
+            Comment::where('id', $id)->update(['rating' => $return]);
+
+
+//        updateowanie rangi
+            $id = $comment->user_id;
+
+            $rating = Comment::where('user_id', $id)->sum('rating');
+
+            if ($rating <= 2) {
+                User::where('id', $id)->update(['rank_name' => 'Nowicjusz']);
+            } else if ($rating > 2 && $rating <= 10) {
+                User::where('id', $id)->update(['rank_name' => 'Zadziorny żółtodziób']);
+            } else if ($rating > 10 && $rating <= 15) {
+                User::where('id', $id)->update(['rank_name' => 'Znawca komputerów']);
+            } else if ($rating > 15 && $rating <= 20) {
+                User::where('id', $id)->update(['rank_name' => 'Weteran']);
+            } else if ($rating > 20 && $rating <= 25) {
+                User::where('id', $id)->update(['rank_name' => 'Nerd']);
+            } else if ($rating > 25 && $rating <= 30) {
+                User::where('id', $id)->update(['rank_name' => 'Władca bajtów']);
+            } else if ($rating > 30) {
+                User::where('id', $id)->update(['rank_name' => 'Piwniczak']);
+            }
+
+
+            return $return;
+        }
 
     }
 
@@ -128,39 +143,60 @@ class CommentController extends Controller
 
         $comment = Comment::where('id', $id)->first();
 
+        $fingerprint = $request->input('fingerprint');
+
         $user_id = Auth::user()->id;
 
-        Like::create([
-            'user_id' => $user_id,
-            'comment_id' => $id,
-        ]);
 
-        $rating = $comment->rating;
+        $fingerprintExists = false;
 
-        $return = $rating -1;
-        Comment::where('id', $id)->update(['rating' => $return]);
-
-        $id = $comment->user_id;
-
-        $rating = Comment::where('user_id', $id)->sum('rating');
-
-        if($rating <= 2){
-            User::where('id', $id)->update(['rank_name' => 'Nowicjusz']);
-        }else if($rating > 2 && $rating <= 10){
-            User::where('id', $id)->update(['rank_name' => 'Zadziorny żółtodziób']);
-        }else if($rating > 10 && $rating <= 15){
-            User::where('id', $id)->update(['rank_name' => 'Znawca komputerów']);
-        }else if($rating > 15 && $rating <= 20){
-            User::where('id', $id)->update(['rank_name' => 'Weteran']);
-        }else if($rating > 20 && $rating <= 25){
-            User::where('id', $id)->update(['rank_name' => 'Nerd']);
-        }else if($rating > 25 && $rating <= 30){
-            User::where('id', $id)->update(['rank_name' => 'Władca bajtów']);
-        }else if($rating > 30){
-            User::where('id', $id)->update(['rank_name' => 'Piwniczak']);
+        $likes = Like::all();
+        foreach($likes as $like){
+            if($like['comment_id'] == $id && $like['fingerprint'] == $fingerprint){
+                $fingerprintExists = true;
+            }
         }
 
-        return $return;
+
+
+        if($fingerprintExists){
+            return "Już oceniano";
+        }else {
+
+
+            Like::create([
+                'user_id' => $user_id,
+                'comment_id' => $id,
+                'fingerprint' => $fingerprint,
+            ]);
+
+            $rating = $comment->rating;
+
+            $return = $rating - 1;
+            Comment::where('id', $id)->update(['rating' => $return]);
+
+            $id = $comment->user_id;
+
+            $rating = Comment::where('user_id', $id)->sum('rating');
+
+            if ($rating <= 2) {
+                User::where('id', $id)->update(['rank_name' => 'Nowicjusz']);
+            } else if ($rating > 2 && $rating <= 10) {
+                User::where('id', $id)->update(['rank_name' => 'Zadziorny żółtodziób']);
+            } else if ($rating > 10 && $rating <= 15) {
+                User::where('id', $id)->update(['rank_name' => 'Znawca komputerów']);
+            } else if ($rating > 15 && $rating <= 20) {
+                User::where('id', $id)->update(['rank_name' => 'Weteran']);
+            } else if ($rating > 20 && $rating <= 25) {
+                User::where('id', $id)->update(['rank_name' => 'Nerd']);
+            } else if ($rating > 25 && $rating <= 30) {
+                User::where('id', $id)->update(['rank_name' => 'Władca bajtów']);
+            } else if ($rating > 30) {
+                User::where('id', $id)->update(['rank_name' => 'Piwniczak']);
+            }
+
+            return $return;
+        }
 }
 
 

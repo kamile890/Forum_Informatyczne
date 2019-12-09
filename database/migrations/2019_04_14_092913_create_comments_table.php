@@ -21,7 +21,6 @@ class CreateCommentsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->text('content');
             $table->integer('rating');
-            $table->string('fingerprint');
             $table->timestamps();
         });
     }

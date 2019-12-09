@@ -61,11 +61,11 @@
         @if(count($comments) == 0)
             {{--informacja o tym, że nie ma jeszcze komentarzy--}}
             <div class="jumbotron" style="font-size: 30px; margin-top: 40px; text-align: center">
-                Nie ma tu jeszcze żadnych postów. Bądź pierwszy. </br> Kliknij na "Dodaj komentarz".
+                Nie ma tu jeszcze żadnych komentarzy. Bądź pierwszy. </br> Kliknij na "Dodaj komentarz".
             </div>
         @else
         @foreach($comments as $comment)
-            <input type="hidden" class="finger" value="{{$comment->fingerprint}}">
+
         <div class="row">
             @foreach($users as $user)
                 @if($user->id == $comment->user_id)
@@ -109,6 +109,7 @@
                 <div class="row">
                 @if(Auth::check())
                     @foreach($likes as $like)
+
                             @if($like['user_id'] == Auth::user()->id && $like['comment_id'] == $comment->id)
                                     <?php
                                     $liked = true;
@@ -207,7 +208,7 @@
     <script>
         $(document).ready(function(){
             $(".zamknij").on("keyup", function() {
-                var value = $(this).val()
+                var value = $(this).val();
                 if(value == 'zamknij'){
                     $('.btn-zamknij').prop("disabled", false);
                 }else{
@@ -252,7 +253,7 @@
         $(document).on("click", ".btn-ban", function () {
             var user_name = $(this).attr('about');
             var user_id = $(this).attr('name');
-            $('.user_name').text("Czy na pewno chcesz zbanować użytkownika "+user_name+" ?")
+            $('.user_name').text("Czy na pewno chcesz zbanować użytkownika "+user_name+" ?");
             $('.for_id').val(user_id);
         });
     </script>
@@ -262,7 +263,7 @@
     <script>
         $(document).ready(function(){
             $(".for_banuj").on("keyup", function() {
-                var value = $(this).val()
+                var value = $(this).val();
                 if(value == 'banuj'){
                     $('.btn_for_ban').prop("disabled", false);
                 }else{
@@ -314,31 +315,28 @@
         $(document).ready(function() {
             var fingerprint;
             Fingerprint2.get(function (components){
-                fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
+                fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31);
                 $('input.fingerprint').val(fingerprint)
-            })
+            });
 
-            var finger = $('input.finger').val()
+
 
 
             $('button.up').click(function () {
                 var thit = $(this);
                 var id = thit.attr('about');
-                if(finger === fingerprint){
-                    $(this).attr('title', 'Z tego komputera dodano już ocenę.')
-                    $(this).parent('div.parent').children('button.down').attr('title', 'Z tego komputera dodano już ocenę.')
-                    $(this).attr('disabled', 'true')
-                    $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
-                }else {
-                    $.get('{{url('/hand_up')}}', {id: id}, function (data) {
-                        thit.parent('div').children('div').html(data);
-                    });
 
-                    $(this).attr('disabled', 'true')
-                    $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
-                }
 
-            })
+
+                $.get('{{url('/hand_up')}}', {id: id, fingerprint: fingerprint}, function (data) {
+                    thit.parent('div').children('div').html(data);
+                });
+
+                $(this).attr('disabled', 'true');
+                $(this).parent('div.parent').children('button.down').attr('disabled', 'true');
+
+
+            });
 
 
             $('button.down').click(function () {
@@ -346,19 +344,13 @@
                 var id = thit.attr('about');
 
 
-                if(finger === fingerprint){
-                    $(this).attr('title', 'Z tego komputera dodano już ocenę.')
-                    $(this).parent('div.parent').children('button.down').attr('title', 'Z tego komuptera dodano już ocenę.')
-                    $(this).attr('disabled', 'true')
-                    $(this).parent('div.parent').children('button.up').attr('disabled', 'true');
-                }else {
-                    $.get('{{url('/hand_down')}}', {id: id}, function (data) {
+                    $.get('{{url('/hand_down')}}', {id: id, fingerprint:fingerprint}, function (data) {
                         thit.parent('div').children('div').html(data);
                     });
 
-                    $(this).attr('disabled', 'true')
+                    $(this).attr('disabled', 'true');
                     $(this).parent('div.parent').children('button.up').attr('disabled', 'true');
-                }
+
 
 
             })
