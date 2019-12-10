@@ -1,5 +1,7 @@
 <div align="center">
+
 # Dokumentacja projektu: Forum Informatyczne
+</div>
 
 ## Wykonali: 
 - Kamil Kłósek 
@@ -7,6 +9,7 @@
 - Łukasz Janowski
 - Ireneusz Kiełtyka
 
+<div align="center">
 
 # Opis
 
