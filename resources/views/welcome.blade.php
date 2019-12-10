@@ -19,7 +19,7 @@
         @foreach($sections as $section)
 
             <div id="Temat" class="panel panel-default row justify-content-center col-6 mx-auto">
-                <div class="panel-body">{{$section->name}}</div>
+                <div class="panel-body" style="text-align: center">{{$section->name}}</div>
             </div>
 
             @foreach($topics as $topic)
