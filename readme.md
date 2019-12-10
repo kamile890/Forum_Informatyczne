@@ -170,14 +170,14 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 2.	 Uruchomienie aplikacji w PhpStorm:
 - Sklonowanie aplikacji z GitHuba
 - Instalacja Composera komendą w terminalu:
-Composer install
+***Composer install***
 - Następnie wpisujemy komendę do wygenerowania klucza:
-php artisan key:generate
-- Po tych komendach wpisujemy komendę do uruchomenia serwera i uruchomienia strony: php artisan serve
+***php artisan key:generate***
+- Po tych komendach wpisujemy komendę do uruchomenia serwera i uruchomienia strony: ***php artisan serve***
 (klikamy w link do localhosta lub wpisujemy w przeglądarkę http://127.0.0.1:8000)
 3.	Import bazy do phpMyAdmin:
 - utworzenie bazy danych o nazwie „baza2”
--import bazy z pliku o nazwie „baza2.sql”
+- import bazy z pliku o nazwie „baza2.sql”
 
 
 ## License
