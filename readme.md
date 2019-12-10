@@ -32,8 +32,10 @@ Dodawanie łapek jest w tym projekcie ograniczone. Użytkownik danej przeglądar
 •	Użytkownik, który stworzył post ma prawo do zamknięcia własnych postów.
 ## 4. Działy dostępne na forum:
 1.	Hardware
-2.	„Moje maszyny”
-3.	Software
+1.	„Moje maszyny”
+1.	Software
+1. Języki programowania
+1. Frameworki
 
 ## 5. Zarządzanie profilem
 •	Administrator posiada opcję zarządzania listą moderatów w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
@@ -48,7 +50,16 @@ Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP 
 
 
 ## Prezentacja forum
-<a href="zdj"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Build Status"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG" alt="Build Status"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG" alt="Build Status"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG" alt="Build Status"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG" alt="Build Status"></a>
+
 
 ## Główna strona forum komputerowego.
 Przedstawione działy  Software, Hardware, Moje Maszyny, Języki programowania i Frameworki posiadają tematy. W tych tematach można umieszczać posty przez zalogowanego użytkownika.
