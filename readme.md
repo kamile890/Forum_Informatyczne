@@ -38,15 +38,15 @@ Dodawanie łapek jest w tym projekcie ograniczone. Użytkownik danej przeglądar
 1. Frameworki
 
 ## 5. Zarządzanie profilem
-•	Administrator posiada opcję zarządzania listą moderatów w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
-•	Administrator posiada opcję zarządzania listą użytkowników, dzięki której może banować i odbanowywać.
-•	Administrator posiada opcję tworzenia tematów i przypisywanie do wybranej zakładki.
+-	Administrator posiada opcję zarządzania listą moderatów w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
+-	Administrator posiada opcję zarządzania listą użytkowników, dzięki której może banować i odbanowywać.
+-	Administrator posiada opcję tworzenia tematów i przypisywanie do wybranej zakładki.
 
 ## 6. System tworzenia kont
-•	Na forum został zaimplementowany system rejestracji i logowania.
+-	Na forum został zaimplementowany system rejestracji i logowania.
 
 ## 7. Realizacja forum
-Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP wraz z Frameworkiem Laravel. Baza danych została wygenerowana w MySQL.
+- Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP wraz z Frameworkiem Laravel. Baza danych została wygenerowana w MySQL.
 
 
 ## Prezentacja forum
@@ -71,15 +71,19 @@ Post utworzony przez użytkownika w dziale Software. Informuje o tytule postu, o
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.png" alt="Build Status"></a>
 
 
-Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo został napisany post/komentarz. Informacje o użytkownikach widnieją obok treści komentarza. Widnieje nazwa użytkownika, ranga, typ konta(Admin,Moderator,Zwykły Użytkownik) i ilość napisanych łącznie komentarzy na forum. Możliwość komentowania jest przydzielona tylko dla zalogowanych użytkowników.
+Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo został napisany post/komentarz. Informacje o użytkownikach widnieją obok treści komentarza. Są to: nazwa użytkownika, ranga, typ konta 
+(Admin, Moderator, Zwykły Użytkownik) i ilość napisanych łącznie komentarzy na forum. Możliwość komentowania jest przydzielona tylko
+ dla zalogowanych użytkowników.
+
 
 ## System rejestracji
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.png" alt="Build Status"></a>
 
  
-Owy system, umożliwia każdemu otrzymania dostępu do członkowstwa w naszym forum. Wystarczy uzupełnić odpowiednimi danymi formularz, a po zatwierdzeniu danych przyciskiem „Rejestruj” strona przeniesie nowo utworzonego użytkownika na stronę główną.
+System ten umożliwia każdemu otrzymane dostępu do członkostwa w naszym forum. Wystarczy uzupełnić odpowiednimi danymi formularz, a po zatwierdzeniu danych przyciskiem „Rejestruj” strona przeniesie nowo utworzonego użytkownika na stronę główną.
 Nowo utworzony użytkownik ma możliwość wylogowania i ponownego zalogowania.
+
  
  <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png" alt="Build Status"></a>
  
@@ -123,9 +127,14 @@ W panelu można zmienić Avatar i login. Ponadto możemy dowiedzieć się o wła
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png" alt="Build Status"></a>
  
-Administrator posiada opcję zarządzania listą moderatów w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać. Znajduje się opcja zarządzania listą użytkowników, dzięki której może banować i odbanowywać. Posiada również opcję tworzenia tematów i przypisywanie do wybranej zakładki.
+Administrator posiada opcję zarządzania listą moderatów, w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać je. Znajduje się tam także opcja zarządzania listą użytkowników, dzięki której może banować i odbanowywać. Posiada również opcję tworzenia tematów i przypisywanie do wybranej zakładki.
 
-Opcja zarządzania listą moderatów w której administrator może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
+Opcja zarządzania listą moderatów, w której administrator może nadawać prawa zwykłemu użytkownikowi do roli moderatora 
+oraz odbierać je.
+
+
+Opcja do zarządzania listą użytkowników, dzięki której administrator może banować i odbanowywać użytkowników i moderatorów.
+
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png" alt="Build Status"></a>
 
@@ -147,12 +156,12 @@ Zbanowany użytkownik nie posiada dostępu do treści strony po zalogowaniu. Odb
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png" alt="Build Status"></a>
 
-Jest zrobiona również funkcja, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
+Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
  
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG" alt="Build Status"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG" alt="Build Status"></a>
 
 
 ## Zainstalowanie Aplikacji
