@@ -1,17 +1,19 @@
 <div align="center">
- Dokumentacja projektu: Forum Informatyczne
+# Dokumentacja projektu: Forum Informatyczne
 
- Wykonali: 
- Kamil Kłósek 
- Norbert Marchut
-Łukasz Janowski
- Ireneusz Kiełtyka
+## Wykonali: 
+- Kamil Kłósek 
+- Norbert Marchut
+- Łukasz Janowski
+- Ireneusz Kiełtyka
 
 
 # Opis
 
 Przedmiotem projektu jest forum informatyczne. Powstało ono dla pogłębiania wiedzy o tematyce informatycznej. Forum informatyczne skierowane jest do  graczy, diagnostyków, programistów, maniaków sprzętowych, a także osób które miewają problemy z programowaniem w różnych językach. 
 </div>
+
+
 ## 1. Typy użytkowników
 1.	Administrator:  Posiada takie sama prawa jak moderator.
 2.	Moderator: Posiada prawa do: tworzenia działów/tematów/postów/komentarzy, banowania i odbanowywania użytkowników.
