@@ -1,17 +1,17 @@
-# Dokumentacja projektu: 
-## Forum Informatyczne
+<div align="center">
+ Dokumentacja projektu: Forum Informatyczne
 
-## Wykonali: 
-Kamil Kłósek, 
-Norbert Marchut, 
-Łukasz Janowski,
-Ireneusz Kiełtyka.
+ Wykonali: 
+ Kamil Kłósek 
+ Norbert Marchut
+Łukasz Janowski
+ Ireneusz Kiełtyka
 
 
 # Opis
 
 Przedmiotem projektu jest forum informatyczne. Powstało ono dla pogłębiania wiedzy o tematyce informatycznej. Forum informatyczne skierowane jest do  graczy, diagnostyków, programistów, maniaków sprzętowych, a także osób które miewają problemy z programowaniem w różnych językach. 
-
+</div>
 ## 1. Typy użytkowników
 1.	Administrator:  Posiada takie sama prawa jak moderator.
 2.	Moderator: Posiada prawa do: tworzenia działów/tematów/postów/komentarzy, banowania i odbanowywania użytkowników.
@@ -46,40 +46,14 @@ Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP 
 
  
  
-
-
-
-
- 
- 
-
-
-
- 
-
-
-
-
+...........
 
 ## Główna strona forum komputerowego.
 Przedstawione działy  Software, Hardware, Moje Maszyny, Języki programowania i Frameworki posiadają tematy. W tych tematach można umieszczać posty przez zalogowanego użytkownika.
 Post utworzony przez użytkownika w dziale Software. Informuje o tytule postu, opisem problemu, a także ilością odpowiedzi i data utworzenia.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+............
 
 
 Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo został napisany post/komentarz. Informacje o użytkownikach widnieją obok treści komentarza. Widnieje nazwa użytkownika, ranga, typ konta(Admin,Moderator,Zwykły Użytkownik) i ilość napisanych łącznie komentarzy na forum. Możliwość komentowania jest przydzielona tylko dla zalogowanych użytkowników.
@@ -100,33 +74,18 @@ Do stworzenia postu został utworzony formularz zgłoszeniowy. Podajemy nazwę t
 
 Po stworzeniu postu, pojawił się komunikat o pomyślnie utworzonym poście, a tym samym nasz nowo utworzony post!
  
-
-
-
-
-
-
-
-
+................
 
 
 ## Witaj w swoim poście! 
 Można z komentować swój własny post jeśli otrzyma się odpowiedź zwrotną lub dodając coś od siebie klikając „Dodaj komentarz” 
  
-
-
-
-
-
-
+..........
 
 ## Możliwość polubień komentarzy.
 Wystarczy kliknąć łapkę w górę lub w dół.
 
- 
-
-
-
+ .........
 
 ## Przejdźmy do panelu użytkownika!
 
@@ -145,52 +104,33 @@ Administrator posiada opcję zarządzania listą moderatów w której może nada
 
 Opcja zarządzania listą moderatów w której administrator może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
 
- 
-
-
-
-
-
-
-
-
-
+ ...........
 
 
 Opcję do tworzenia tematów i przypisywanie do wybranej zakładki.
 
- 
+ .............
 
 
 Opcja do zarządzania listą użytkowników, dzięki której administrator może banować i odbanowywać użytkowników i moderatorów.
 
 
- 
+ ..........
 Administrator i moderator mogą banować użytkowników bezpośrednio z poziomu komentowania postów.
 
 
- 
-
-
-
-
-
-
-
-
+ ..........
 
 
 Zbanowany użytkownik nie posiada dostępu do treści strony po zalogowaniu. Odblokowanie konta może wykonać administrator.
 
- 
+ ............
 
 
 Jest zrobiona również funkcja, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
  
 
- 
-
-
+ ...............
 
 
 ## Zainstalowanie Aplikacji
@@ -207,7 +147,6 @@ php artisan key:generate
 3.	Import bazy do phpMyAdmin:
 - utworzenie bazy danych o nazwie „baza2”
 -import bazy z pliku o nazwie „baza2.sql”
-
 
 
 ## License
