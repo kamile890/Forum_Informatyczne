@@ -71,51 +71,51 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-##Dokumentacja projektu: 
-##Forum Informatyczne
+## Dokumentacja projektu: 
+## Forum Informatyczne
 
-##Wykonali: 
+## Wykonali: 
 Kamil Kłósek, 
 Norbert Marchut, 
 Łukasz Janowski,
 Ireneusz Kiełtyka.
 
 
-#Opis
+# Opis
 
 Przedmiotem projektu jest forum informatyczne. Powstało ono dla pogłębiania wiedzy o tematyce informatycznej. Forum informatyczne skierowane jest do  graczy, diagnostyków, programistów, maniaków sprzętowych, a także osób które miewają problemy z programowaniem w różnych językach. 
 
-##1. Typy użytkowników
+## 1. Typy użytkowników
 1.	Administrator:  Posiada takie sama prawa jak moderator.
 2.	Moderator: Posiada prawa do: tworzenia działów/tematów/postów/komentarzy, banowania i odbanowywania użytkowników.
 3.	Zalogowany użytkownik: Posiada prawa do: tworzenia postów.
 4.	Gość: Posiada prawa do: Przeglądania forum.
 
-##2.  System rang
+## 2.  System rang
 System rang będzie klasyfikował użytkowników na podstawie ich udzielania się na forum. Zdobycie rangi, będzie zależne od zdobycia łapek polubień. Im większa ilość łapek polubień tym wyższa ranga. Zakładamy, że wyższy stopień rangi użytkownika będzie go określał jako bardziej pomocnego na forum.
 Dodawanie łapek jest w tym projekcie ograniczone. Użytkownik danej przeglądarki ma możliwość dodania tylko jednej oceny. Jest to zasługa użycia biblioteki Fingerprint, która wykorzystuje ustawienia przeglądarki oraz mechanizm hashowania. Po wykonaniu Fingerprinta dostajemy hash przeglądarki, który jest zapisywany do bazy do późniejszych porównań.
 
-##3. Zamykanie postów
+## 3. Zamykanie postów
 •	Administrator/Moderator  posiadają prawa do zamykania postów.
 •	Użytkownik, który stworzył post ma prawo do zamknięcia własnych postów.
-##4. Działy dostępne na forum:
+## 4. Działy dostępne na forum:
 1.	Hardware
 2.	„Moje maszyny”
 3.	Software
 
-##5. Zarządzanie profilem
+## 5. Zarządzanie profilem
 •	Administrator posiada opcję zarządzania listą moderatów w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać.
 •	Administrator posiada opcję zarządzania listą użytkowników, dzięki której może banować i odbanowywać.
 •	Administrator posiada opcję tworzenia tematów i przypisywanie do wybranej zakładki.
 
-##6. System tworzenia kont
+## 6. System tworzenia kont
 •	Na forum został zaimplementowany system rejestracji i logowania.
 
-##7. Realizacja forum
+## 7. Realizacja forum
 Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP wraz z Frameworkiem Laravel. Baza danych została wygenerowana w MySQL.
 
 
-##Prezentacja forum
+## Prezentacja forum
 
  
  
@@ -134,7 +134,7 @@ Forum zostało stworzone w środowisku PHPStorm. Mechanizmem kieruje język PHP 
 
 
 
-##Główna strona forum komputerowego.
+## Główna strona forum komputerowego.
 Przedstawione działy  Software, Hardware, Moje Maszyny, Języki programowania i Frameworki posiadają tematy. W tych tematach można umieszczać posty przez zalogowanego użytkownika.
 Post utworzony przez użytkownika w dziale Software. Informuje o tytule postu, opisem problemu, a także ilością odpowiedzi i data utworzenia.
 
@@ -157,7 +157,7 @@ Post utworzony przez użytkownika w dziale Software. Informuje o tytule postu, o
 
 Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo został napisany post/komentarz. Informacje o użytkownikach widnieją obok treści komentarza. Widnieje nazwa użytkownika, ranga, typ konta(Admin,Moderator,Zwykły Użytkownik) i ilość napisanych łącznie komentarzy na forum. Możliwość komentowania jest przydzielona tylko dla zalogowanych użytkowników.
 
-##System rejestracji
+## System rejestracji
  
 Owy system, umożliwia każdemu otrzymania dostępu do członkowstwa w naszym forum. Wystarczy uzupełnić odpowiednimi danymi formularz, a po zatwierdzeniu danych przyciskiem „Rejestruj” strona przeniesie nowo utworzonego użytkownika na stronę główną.
 Nowo utworzony użytkownik ma możliwość wylogowania i ponownego zalogowania.
@@ -167,7 +167,7 @@ Nowo utworzony użytkownik ma możliwość wylogowania i ponownego zalogowania.
 Po zalogowaniu, pojawiła się opcja utworzenia postu po wybraniu dowolnego tematu znajdującego się na stronie forum.
  
 
-##Stwórzmy post!
+## Stwórzmy post!
  
 Do stworzenia postu został utworzony formularz zgłoszeniowy. Podajemy nazwę tematu zgodną z wybranym działem oraz niezbędny jest szczegółowy opis. Gdy to już zostanie zrealizowane – kliknij Dodaj!
 
@@ -183,7 +183,7 @@ Po stworzeniu postu, pojawił się komunikat o pomyślnie utworzonym poście, a 
 
 
 
-##Witaj w swoim poście! 
+## Witaj w swoim poście! 
 Można z komentować swój własny post jeśli otrzyma się odpowiedź zwrotną lub dodając coś od siebie klikając „Dodaj komentarz” 
  
 
@@ -193,7 +193,7 @@ Można z komentować swój własny post jeśli otrzyma się odpowiedź zwrotną 
 
 
 
-##Możliwość polubień komentarzy.
+## Możliwość polubień komentarzy.
 Wystarczy kliknąć łapkę w górę lub w dół.
 
  
@@ -201,7 +201,7 @@ Wystarczy kliknąć łapkę w górę lub w dół.
 
 
 
-##Przejdźmy do panelu użytkownika!
+## Przejdźmy do panelu użytkownika!
 
  
 
@@ -266,7 +266,7 @@ Jest zrobiona również funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 
 
 
-##Zainstalowanie Aplikacji
+## Zainstalowanie Aplikacji
 
 1.	Instalacja pakietu XAMPP.
 2.	 Uruchomienie aplikacji w PhpStorm:
