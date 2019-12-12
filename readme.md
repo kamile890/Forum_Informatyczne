@@ -168,13 +168,10 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 
 1.	Instalacja pakietu XAMPP.
 2.	 Uruchomienie aplikacji w PhpStorm:
-- Sklonowanie aplikacji z GitHuba
-- Instalacja Composera komendą w terminalu:
-***Composer install***
-- Następnie wpisujemy komendę do wygenerowania klucza:
-***php artisan key:generate***
-- Po tych komendach wpisujemy komendę do uruchomenia serwera i uruchomienia strony: ***php artisan serve***
-(klikamy w link do localhosta lub wpisujemy w przeglądarkę http://127.0.0.1:8000)
+    - Sklonowanie aplikacji z GitHuba
+    - Instalacja Composera komendą w terminalu: ***Composer install***
+    - Następnie wpisujemy komendę do wygenerowania klucza: ***php artisan key:generate***
+    - Po tych komendach wpisujemy komendę do uruchomenia serwera i uruchomienia strony: ***php artisan serve*** (klikamy w link do localhosta lub wpisujemy w przeglądarkę http://127.0.0.1:8000)
 3.	Import bazy do phpMyAdmin:
 - utworzenie bazy danych o nazwie „baza2”
 - import bazy z pliku o nazwie „baza2.sql”
@@ -200,7 +197,25 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 ### Diagram przypadków użycia:
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/uml.png"><img src="../master/zdj/uml.png" alt="Obraz"></a>
 
+# Technologie wykorzystane w projekcie
+## MVC
+Model-View-Controller (pol. Model-Widok-Kontroler) – to wzorzec architektoniczny służący do organizowania struktury aplikacji posiadających graficzne interfejsy użytkownika.
+Wzorzec zakłada podział aplikacji na trzy główne części:
+- Model – jest pewną reprezentacją problemu bądź logiki aplikacji.
+- Widok – opisuje, jak wyświetlić pewną część modelu w ramach interfejsu użytkownika. Może składać się z podwidoków odpowiedzialnych za mniejsze części interfejsu.
+- Kontroler – przyjmuje dane wejściowe od użytkownika i reaguje na jego poczynania, zarządzając aktualizacje modelu oraz odświeżenie widoków.
 
+Struktura katalogów w Laravel przewiduje miejsca, gdzie umieszcza się pliki w zależności od tego czy są to kontrolery, widoki czy modele.
+
+#### Kontrolery
+Kontrolery przechowywane są w kalalogu Controllers znajdującym się w katalogu Http w katalogu app.
+Są swoistymi łącznikami pomiędzy modelem a widokiem. Odpowiadają za przetwarzanie danych wejściowych i przekazywaniem ich do modelu. Następnie tak przetworzone dane są odbierane i wyświetlone użytkownikowi w widoku w którym wysyłał żądanie albo zostaje przekierowany na inną stronę.
+
+#### Modele
+Znajdują się w katalogu app. Stanowią mózg aplikacji. To w nich są zdefiniowane obiekty. Zakładając, że piszemy bloga to w modelu zdefiniujemy klasy opisujące Posty, Tagi, Kategorie, Użytkowników itp. ale to nie wszytko. Żeby taki blog mógł prawidłowo funkcjonować trzeba te klasy i ich obiekty powiązać ze sobą. Powiązania są realizowane przy użyciu kilku rodzajów relacji.
+
+#### Widoki
+Pliki widoków umieszczone są w katalogu views znajdującym się w katalogu resources. W Laravel widoki umieszczane są w szablonach Blade. Są to podstawowe pliki HTML, które ładowane są podczas pracy kontrolera. Jest to element z punktu widzenia Back end’owych programistów mało doceniany, ale to właśnie tu użytkownik styka się ze stroną. Dane pobrane z bazy danych, obliczone w modelu poprzez kontroler wysłane do widoku.
 
 ## License
 
