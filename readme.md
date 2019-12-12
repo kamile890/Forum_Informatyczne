@@ -50,15 +50,15 @@ Dodawanie łapek jest w tym projekcie ograniczone. Użytkownik danej przeglądar
 
 
 ## Prezentacja forum
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna2.PNG" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna3.PNG" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna4.PNG" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna5.PNG" alt="Obraz"></a>
 
 
 ## Główna strona forum komputerowego.
@@ -66,9 +66,9 @@ Przedstawione działy  Software, Hardware, Moje Maszyny, Języki programowania i
 Post utworzony przez użytkownika w dziale Software. Informuje o tytule postu, opisem problemu, a także ilością odpowiedzi i data utworzenia.
 
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post.jpg"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post.jpg" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post.jpg"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post.jpg" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_z_komentarzami.png" alt="Obraz"></a>
 
 
 Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo został napisany post/komentarz. Informacje o użytkownikach widnieją obok treści komentarza. Są to: nazwa użytkownika, ranga, typ konta 
@@ -78,54 +78,54 @@ Wnętrze postu charakteryzuje się komentarzami wraz z informacją przez kogo zo
 
 ## System rejestracji
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/rejestracja.png" alt="Obraz"></a>
 
  
 System ten umożliwia każdemu otrzymane dostępu do członkostwa w naszym forum. Wystarczy uzupełnić odpowiednimi danymi formularz, a po zatwierdzeniu danych przyciskiem „Rejestruj” strona przeniesie nowo utworzonego użytkownika na stronę główną.
 Nowo utworzony użytkownik ma możliwość wylogowania i ponownego zalogowania.
 
  
- <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png" alt="Build Status"></a>
+ <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nowy_uzytkownik.png" alt="Obraz"></a>
  
- <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Logowanie.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Logowanie.png" alt="Build Status"></a>
+ <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Logowanie.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Logowanie.png" alt="Obraz"></a>
 
 
 Po zalogowaniu, pojawiła się opcja utworzenia postu po wybraniu dowolnego tematu znajdującego się na stronie forum.
  
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Tworzenie_postu.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Tworzenie_postu.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Tworzenie_postu.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/Tworzenie_postu.png" alt="Obraz"></a>
 
 ## Stwórzmy post!
  
- <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_postu2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_postu2.png" alt="Build Status"></a>
+ <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_postu2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_postu2.png" alt="Obraz"></a>
  
 Do stworzenia postu został utworzony formularz zgłoszeniowy. Podajemy nazwę tematu zgodną z wybranym działem oraz niezbędny jest szczegółowy opis. Gdy to już zostanie zrealizowane – kliknij Dodaj!
 
 Po stworzeniu postu, pojawił się komunikat o pomyślnie utworzonym poście, a tym samym nasz nowo utworzony post!
  
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_komunikat.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_komunikat.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_komunikat.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/post_komunikat.png" alt="Obraz"></a>
 
 
 ## Witaj w swoim poście! 
 Można z komentować swój własny post jeśli otrzyma się odpowiedź zwrotną lub dodając coś od siebie klikając „Dodaj komentarz” 
  
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz.png" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz2.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz2.png" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz3.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz3.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz3.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/dodaj_komentarz3.png" alt="Obraz"></a>
 
 ##### Możliwość polubień komentarzy.
 Wystarczy kliknąć łapkę w górę lub w dół.
 
 ## Przejdźmy do panelu użytkownika!
 
- <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/panel.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/panel.png" alt="Build Status"></a>
+ <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/panel.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/panel.png" alt="Obraz"></a>
 
 W panelu można zmienić Avatar i login. Ponadto możemy dowiedzieć się o własnej randze i na jakim poziomie uprawnień jest nasze konto.
 
 ## Panel zarządzania przez administratora!
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/zarzadzanie.png" alt="Obraz"></a>
  
 Administrator posiada opcję zarządzania listą moderatów, w której może nadawać prawa zwykłemu użytkownikowi do roli moderatora jak i odbierać je. Znajduje się tam także opcja zarządzania listą użytkowników, dzięki której może banować i odbanowywać. Posiada również opcję tworzenia tematów i przypisywanie do wybranej zakładki.
 
@@ -136,32 +136,32 @@ oraz odbierać je.
 Opcja do zarządzania listą użytkowników, dzięki której administrator może banować i odbanowywać użytkowników i moderatorów.
 
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_moderatorow.png" alt="Obraz"></a>
 
 Opcję do tworzenia tematów i przypisywanie do wybranej zakładki.
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_tematu.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_tematu.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_tematu.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/tworzenie_tematu.png" alt="Obraz"></a>
 
 Opcja do zarządzania listą użytkowników, dzięki której administrator może banować i odbanowywać użytkowników i moderatorów.
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_userow.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_userow.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_userow.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/lista_userow.png" alt="Obraz"></a>
 
 Administrator i moderator mogą banować użytkowników bezpośrednio z poziomu komentowania postów.
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban.png" alt="Obraz"></a>
 
 
 
 Zbanowany użytkownik nie posiada dostępu do treści strony po zalogowaniu. Odblokowanie konta może wykonać administrator.
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png" alt="Obraz"></a>
 
 Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
  
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG" alt="Obraz"></a>
 
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/nieZnalezionoStrony.PNG" alt="Obraz"></a>
 
 
 ## Zainstalowanie Aplikacji
@@ -180,20 +180,25 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 - import bazy z pliku o nazwie „baza2.sql”
 
 # Szkic wyglądu strony w programie Axure (całościowy plik znajduję się w folderze ***projekt***)
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/home.png"><img src="../master/zdj/home.png" alt="Build Status"></a>
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/strona_z_postami_dzialu.png"><img src="../master/zdj/strona_z_postami_dzialu.png" alt="Build Status"></a>
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/pojedynczy_post_z_komentarzami.png"><img src="../master/zdj/pojedynczy_post_z_komentarzami.png" alt="Build Status"></a>
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/zarzadzanie.png"><img src="../master/zdj/zarzadzanie.png" alt="Build Status"></a>
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/rejestracja.png"><img src="../master/zdj/rejestracja.png" alt="Build Status"></a>
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/logowanie.png"><img src="../master/zdj/logowanie.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/home.png"><img src="../master/zdj/home.png" alt="Obraz"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/strona_z_postami_dzialu.png"><img src="../master/zdj/strona_z_postami_dzialu.png" alt="Obraz"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/pojedynczy_post_z_komentarzami.png"><img src="../master/zdj/pojedynczy_post_z_komentarzami.png" alt="Obraz"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/zarzadzanie.png"><img src="../master/zdj/zarzadzanie.png" alt="Obraz"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/rejestracja.png"><img src="../master/zdj/rejestracja.png" alt="Obraz"></a>
+
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/logowanie.png"><img src="../master/zdj/logowanie.png" alt="Obraz"></a>
 
 
 # Projekt bazy oraz diagram UML.
 ### Projekt bazy:
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/baza%20erd.PNG"><img src="../master/zdj/baza%20erd.PNG" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/baza%20erd.PNG"><img src="../master/zdj/baza%20erd.PNG" alt="Obraz"></a>
 
 ### Diagram przypadków użycia:
-<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/uml.png"><img src="../master/zdj/uml.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/uml.png"><img src="../master/zdj/uml.png" alt="Obraz"></a>
 
 
 
