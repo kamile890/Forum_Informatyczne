@@ -1,6 +1,3 @@
-![cos tma](../zdj/screeny dokumentacja/glowna1.png)
-<img src="../master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Build Status">
-
 <div align="center">
 
 # Dokumentacja projektu: Forum Informatyczne
@@ -181,6 +178,23 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 3.	Import bazy do phpMyAdmin:
 - utworzenie bazy danych o nazwie „baza2”
 - import bazy z pliku o nazwie „baza2.sql”
+
+# Szkic wyglądu strony w programie Axure (całościowy plik znajduję się w folderze ***projekt***)
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/home.png"><img src="../master/zdj/home.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/strona_z_postami_dzialu.png"><img src="../master/zdj/strona_z_postami_dzialu.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/pojedynczy_post_z_komentarzami.png"><img src="../master/zdj/pojedynczy_post_z_komentarzami.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/zarzadzanie.png"><img src="../master/zdj/zarzadzanie.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/rejestracja.png"><img src="../master/zdj/rejestracja.png" alt="Build Status"></a>
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/logowanie.png"><img src="../master/zdj/logowanie.png" alt="Build Status"></a>
+
+
+# Projekt bazy oraz diagram UML.
+### Projekt bazy:
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/baza%20erd.PNG"><img src="../master/zdj/baza%20erd.PNG" alt="Build Status"></a>
+
+### Diagram UML:
+<a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/uml.png"><img src="../master/zdj/uml.png" alt="Build Status"></a>
+
 
 
 ## License
