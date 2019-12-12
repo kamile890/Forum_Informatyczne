@@ -192,7 +192,7 @@ Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w p
 ### Projekt bazy:
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/baza%20erd.PNG"><img src="../master/zdj/baza%20erd.PNG" alt="Build Status"></a>
 
-### Diagram UML:
+### Diagram przypadków użycia:
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/uml.png"><img src="../master/zdj/uml.png" alt="Build Status"></a>
 
 
