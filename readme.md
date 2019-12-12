@@ -1,3 +1,6 @@
+![cos tma](../zdj/screeny dokumentacja/glowna1.png)
+<img src="../master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Build Status">
+
 <div align="center">
 
 # Dokumentacja projektu: Forum Informatyczne
