@@ -180,7 +180,7 @@ Zbanowany użytkownik nie posiada dostępu do treści strony po zalogowaniu. Odb
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/ban2.png" alt="Obraz"></a>
 
-Jest również zrobiona funkcja, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
+Funkcja zrobiona, aby nie wpisywać różnych dziwnych rzeczy w pasku adresu. Poniżej przykład:
  
 
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/pasekadresu.PNG" alt="Obraz"></a>
