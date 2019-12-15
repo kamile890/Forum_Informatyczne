@@ -73,6 +73,10 @@ Pliki widoków umieszczone są w katalogu views znajdującym się w katalogu res
  >
 </a>
 
+#### FingerPrint
+Fingerprint ma unikalne podejście do zapobiegania oszustwom w naszej witrynie. Biblioteka generuje unikalny identyfikator przeglądarki bez użycia plików cookie ani żadnych informacji, które może łatwo zmodyfikować złośliwy użytkownik. Przechowując ten identyfikator w bazie danych, zapobiegamy oszustwom, jeśli ktoś próbuje użyć tego samego urządzenia (komputera, tabletu lub telefonu) w celu dwukrotnej rejestracji, wielokrotnego przesłania głosu polubień lub wykonania dowolnego innego podejrzanego działania .
+Biblioteka automatycznie wykrywa funkcje przeglądarki i selektywnie sprawdza dostępne parametry przeglądarki.
+
 # Prezentacja forum
 <a href="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG"><img src="https://github.com/kamile890/Forum_Informatyczne/blob/master/zdj/screeny%20dokumentacja/glowna1.PNG" alt="Obraz"></a>
 
